@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Ubuntu" "Cantarell"  ;
+  background-color: #61dce5; 
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;  /* Arka Plan Renk Geçişi */
+}
+.container {
+  text-align: center;
+  max-width: 700px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.4); /* Siyah şeffaf */
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: white;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+.favorites {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.favorites ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.favorites li {
+  background-color: rgba(0, 0, 0, 0.25); /* Daha belirgin şeffaf siyah */
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #ff6b6b;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    border-radius: 0;
+    margin: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .favorites h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .favorites li {
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .delete-btn {
+    align-self: flex-end;
+    font-size: 1.1rem;
+  }
+}
